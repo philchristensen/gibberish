@@ -1,0 +1,27 @@
+/*
+ * gibberish
+ * by Phil Christensen <phil@bubblehouse.org>
+ * see LICENSE for details
+ */
+
+@import "normalize.less";
+
+@tile_color: #DDE1BF;
+
+.gibberish {
+	.mot {
+		cursor: pointer;
+		display: inline;
+		position: absolute;
+		padding: 5px;
+		border-top: 1px solid lighten(@tile_color, 30%);
+		border-left: 1px solid lighten(@tile_color, 15%);
+		border-bottom: 1px solid darken(@tile_color, 15%);
+		border-right: 1px solid darken(@tile_color, 30%);
+		background-color: @tile_color;
+	}
+}
+
+@import "media-queries.less";
+@import "helpers.less";
+@import "print.less";
