@@ -14,15 +14,7 @@
 				top: m.offset().top + Math.floor(Math.random()*$(window).height()*0.9),
 				left: m.offset().left + Math.floor(Math.random()*$(window).width()*0.9)
 			});
-			m.draggable().touch({
-				animate: false,
-				sticky: false,
-				dragx: true,
-				dragy: true,
-				rotate: false,
-				resort: true,
-				scale: false
-			});;
+			m.draggable();
 		}
 	});
 	
